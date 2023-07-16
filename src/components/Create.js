@@ -14,15 +14,19 @@ const Create = () => {
     }) 
 
   .then(() => {
-
     setName('');
     setEmail('');
     setPassword('');
   })
+  .then(handleReload)
   .catch((error) => {
     console.log(error);
   });
 }
+
+  const handleReload = () => {
+    window.location.reload();
+  };
 
   return (
     <div>
@@ -34,7 +38,7 @@ const Create = () => {
                   <form>
                    <div class="mb-3">
                    <label for="exampleInputEmail1" class="form-label">Name</label>
-                   <input autoCapitalize='on' autoComplete='off' value={name} onChange={(e)=>{setName(e.target.value)}} type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"/>
+                   <input required='true' autoCapitalize='on' autoComplete='off' value={name} onChange={(e)=>{setName(e.target.value)}} type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"/>
                    </div>
                    <label for="exampleInputEmail1" class="form-label">Email address</label>
                    <input autoComplete='off' value={email} onChange={(e)=>{setEmail(e.target.value)}} type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"/>
@@ -46,7 +50,7 @@ const Create = () => {
                    <div class=" form-check">
                    </div>
                    <button onClick={postdata} type="submit" class="btn btn-primary w-100">Submit</button>
-                   <p className='text-capitalize mt-3'>The data get save in the data table just refresh the page and scroll down.</p>
+                   <p className='text-capitalize mt-3'>by clicking the submit button the data will be stored in the data table.</p>
                    </form>
                   </div>
               </div>

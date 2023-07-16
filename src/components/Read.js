@@ -25,6 +25,19 @@ const Read = () => {
         });
     }
 
+    const updatedata=(item)=>{
+        let{id,name,email,password}= item;
+        localStorage.setItem('ID',id);
+        localStorage.setItem('NAME',name);
+        localStorage.setItem('EMAIL',email);
+        localStorage.setItem('PASSWORD',password);
+        handleReload();
+     };
+
+     const handleReload = () => {
+        window.location.reload();
+      };
+
     useEffect(()=>{
        fetchdata()
     },[])
@@ -33,7 +46,7 @@ const Read = () => {
         <div className='container-fluid'>
               <div className='row justify-content-center'>
                    <div className='col-lg-8 p-3'>
-                   <h3 className='text-center bg-info p-3'>Here You can Read The Data.</h3>
+                   <h1 className='text-center bg-info p-3'>DATA TABLE</h1>
                    <table className='text-center table table-bordered'>       
             <thead>
                 <tr>
@@ -50,7 +63,12 @@ const Read = () => {
                         <td>{item.name}</td>
                         <td>{item.email}</td>
                         <td>{item.password}</td>
-                        <td><button onClick={() => deleteData(item.id)}  className='btn btn-primary'>DELETE</button></td>
+                        <td>
+                            <div className='d-flex justify-content-around'>
+                            <button onClick={()=>{updatedata(item)}}  className='btn btn-primary'>UPDATE</button>
+                            <button onClick={() => deleteData(item.id)}  className='btn btn-primary'>DELETE</button>
+                            </div>
+                        </td>
                     </tr>
                 )
               })}
