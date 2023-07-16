@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/codewithafzall/crud-react/static/css/main.3a53ca22.css",
+    "main.js": "/codewithafzall/crud-react/static/js/main.17ed9871.js",
+    "index.html": "/codewithafzall/crud-react/index.html",
+    "main.3a53ca22.css.map": "/codewithafzall/crud-react/static/css/main.3a53ca22.css.map",
+    "main.17ed9871.js.map": "/codewithafzall/crud-react/static/js/main.17ed9871.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3a53ca22.css",
+    "static/js/main.17ed9871.js"
+  ]
+}
