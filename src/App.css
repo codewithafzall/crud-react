@@ -1,0 +1,33 @@
+body{
+    background-color: #575757 !important; 
+}
+.col-lg-6{
+    background-color: aliceblue;
+    box-shadow: 10px 10px 15px rgb(63, 63, 63);
+}
+.logo{
+    font-size: 32px;
+    color: azure;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+.navli{
+    color: azure;
+    font-size: 20px ;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+}
+th{
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+@media only screen and (max-width : 600px) {
+    .logo{
+        font-size: 17px;
+    }
+    th{
+        font-size: 14px;
+    }
+}
