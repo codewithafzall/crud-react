@@ -46,7 +46,7 @@ const Create = () => {
                    <div class=" form-check">
                    </div>
                    <button onClick={postdata} type="submit" class="btn btn-primary w-100">Submit</button>
-                   <p className='text-capitalize mt-3'>The data get save in the data table you can view it by clicking on the right corner.</p>
+                   <p className='text-capitalize mt-3'>The data get save in the data table just refresh the page and scroll down.</p>
                    </form>
                   </div>
               </div>

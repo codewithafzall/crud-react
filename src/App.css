@@ -1,7 +1,7 @@
 body{
-    background-color: #575757 !important; 
+    background-color: #575757 !important;
 }
-.col-lg-6{
+.col-lg-6,table{
     background-color: aliceblue;
     box-shadow: 10px 10px 15px rgb(63, 63, 63);
 }
@@ -30,4 +30,7 @@ th{
     th{
         font-size: 14px;
     }
+}
+#first,#second{
+    height: 100vh;
 }

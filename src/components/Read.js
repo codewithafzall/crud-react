@@ -34,7 +34,7 @@ const Read = () => {
               <div className='row justify-content-center'>
                    <div className='col-lg-8 p-3'>
                    <h3 className='text-center bg-info p-3'>Here You can Read The Data.</h3>
-                   <table className='table table-info table-bordered'>       
+                   <table className='text-center table table-bordered'>       
             <thead>
                 <tr>
                     <th>Name</th>
