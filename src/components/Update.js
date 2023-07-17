@@ -7,13 +7,6 @@ const Update = () => {
     const [email ,setEmail]=useState('')
     const [password ,setPassword]=useState('')
     const [id , setID]=useState(null)
-    
-    useEffect(()=>{
-        setID((localStorage.getItem('ID')));
-        setName((localStorage.getItem('NAME')));
-        setEmail((localStorage.getItem('EMAIL')));
-        setPassword((localStorage.getItem('PASSWORD')));
-    },[]) 
 
     const handleReload = () => {
         window.location.reload();
@@ -26,17 +19,20 @@ const Update = () => {
             name,email,password
         })
         .then(handleReload)
-        .then(() => {
-            setName('');
-            setEmail('');
-            setPassword('');
-          })
+
           .then(alert("Your Data Has Been Updated"))
           
           .catch((error)=>{
             console.log(error)
           })
     }
+
+    useEffect(()=>{
+      setID((localStorage.getItem('ID')));
+      setName((localStorage.getItem('NAME')));
+      setEmail((localStorage.getItem('EMAIL')));
+      setPassword((localStorage.getItem('PASSWORD')));
+  },[]) 
 
   return (
    
@@ -60,7 +56,7 @@ const Update = () => {
                    </div>
                    <div class=" form-check">
                    </div>
-                   <button onClick={updateddata} type="submit" class="btn btn-primary w-100">UPDATE</button>
+                   <a href='/Read'><button onClick={updateddata} type="submit" class="btn btn-primary w-100">UPDATE</button></a>
                    <p className='text-capitalize mt-3'>by clicking the update button the data will be updated in the data table.</p>
                    </form>
                   </div>

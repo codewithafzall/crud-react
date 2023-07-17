@@ -7,16 +7,17 @@ body{
 }
 .logo{
     font-size: 32px;
-    color: azure;
+    color: rgb(0, 0, 0) !important;
     text-decoration: none;
     letter-spacing: 2px;
     font-weight: 700;
 }
 .navli{
-    color: azure;
+    color: rgb(57, 57, 57) !important;
     font-size: 20px ;
     text-decoration: none;
     font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
 }
 th{
     font-size: 20px;

@@ -43,7 +43,8 @@ const Read = () => {
     },[])
   return (
     <div>
-        <div className='container-fluid'>
+       {data.length > 0 ? 
+       (<div className='container-fluid'>
               <div className='row justify-content-center'>
                    <div className='col-lg-8 p-3'>
                    <h1 className='text-center bg-info p-3'>DATA TABLE</h1>
@@ -65,7 +66,7 @@ const Read = () => {
                         <td>{item.password}</td>
                         <td>
                             <div className='d-flex justify-content-around'>
-                            <button onClick={()=>{updatedata(item)}}  className='btn btn-primary'>UPDATE</button>
+                            <a href='/Update'><button onClick={()=>{updatedata(item)}}  className='btn btn-primary'>UPDATE</button></a>
                             <button onClick={() => deleteData(item.id)}  className='btn btn-primary'>DELETE</button>
                             </div>
                         </td>
@@ -76,7 +77,10 @@ const Read = () => {
         </table>
                    </div>
               </div>
-        </div>
+        </div>):
+        (
+            <h1 className='text-center bg-info display-2 m-5 p-5'>NO RECORDS</h1>
+        )} 
     </div>
   )
 }
