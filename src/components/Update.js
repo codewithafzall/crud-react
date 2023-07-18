@@ -56,7 +56,7 @@ const Update = () => {
                    </div>
                    <div class=" form-check">
                    </div>
-                   <a href='/Read'><button onClick={updateddata} type="submit" class="btn btn-primary w-100">UPDATE</button></a>
+                   <a href='#read'><button onClick={updateddata} type="submit" class="btn btn-primary w-100">UPDATE</button></a>
                    <p className='text-capitalize mt-3'>by clicking the update button the data will be updated in the data table.</p>
                    </form>
                   </div>

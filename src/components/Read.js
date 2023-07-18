@@ -66,7 +66,7 @@ const Read = () => {
                         <td>{item.password}</td>
                         <td>
                             <div className='d-flex justify-content-around'>
-                            <a href='/Update'><button onClick={()=>{updatedata(item)}}  className='btn btn-primary'>UPDATE</button></a>
+                            <a href='#update'><button onClick={()=>{updatedata(item)}}  className='btn btn-primary'>UPDATE</button></a>
                             <button onClick={() => deleteData(item.id)}  className='btn btn-primary'>DELETE</button>
                             </div>
                         </td>

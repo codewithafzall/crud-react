@@ -12,13 +12,13 @@ const Header = () => {
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto me-5">
         <li class="nav-item text-uppercase ">
-          <a class="nav-link  navli" href="/">Create</a>
+          <a class="nav-link  navli" href="#create">Create</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link navli text-uppercase" href="/Read">Read</a>
+          <a class="nav-link navli text-uppercase" href="#read">Read</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link navli text-uppercase" href="/Update">Update</a>
+          <a class="nav-link navli text-uppercase" href="#update">Update</a>
         </li>
       </ul>
     </div>
