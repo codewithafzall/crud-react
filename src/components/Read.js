@@ -1,5 +1,6 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 
 const Read = () => {
     const [data, setData]=useState([]);
@@ -67,7 +68,7 @@ const Read = () => {
                         <td>{item.password}</td>
                         <td>
                             <div className='d-flex justify-content-around'>
-                            <a href='#update'><button onClick={()=>{updatedata(item)}}  className='btn btn-primary'>UPDATE</button></a>
+                            <Link to='/update'><button onClick={()=>{updatedata(item)}}  className='btn btn-primary'>UPDATE</button></Link>
                             <button onClick={() => deleteData(item.id)}  className='btn btn-primary'>DELETE</button>
                             </div>
                         </td>
