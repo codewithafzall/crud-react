@@ -41,7 +41,7 @@ const Update = () => {
          <div className='container'>
               <div className='row justify-content-center'>
                   <div className='col-lg-6 m-5 p-4'>
-                  <h2 className='text-center text-uppercase'>update Details</h2>
+                  <h2 className='text-center text-uppercase'>update Details post</h2>
                   <form>
                    <div class="mb-3">
                    <label for="exampleInputEmail1" class="form-label">Name</label>
