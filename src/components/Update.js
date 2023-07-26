@@ -21,10 +21,10 @@ const Update = () => {
         .then(handleReload)
 
           .then(alert("Your Data Has Been Updated"))
-          
           .catch((error)=>{
             console.log(error)
           })
+
     }
 
     useEffect(()=>{

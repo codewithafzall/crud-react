@@ -1,24 +1,26 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
+
 
 const Header = () => {
   return (
     <div>
         <nav class="navbar navbar-expand-lg navbar-light bg-light py-4">
   <div class="container-fluid">
-    <a class="navbar-brand logo" href="/">REACT CRUD OPERATION</a>
+    <NavLink class="navbar-brand logo" to="/">REACT CRUD OPERATION</NavLink>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto me-5">
         <li class="nav-item text-uppercase ">
-          <a class="nav-link  navli" href="#create">Create</a>
+          <NavLink class="nav-link  navli" to="/">Create</NavLink>
         </li>
         <li class="nav-item">
-          <a class="nav-link navli text-uppercase" href="#read">Read</a>
+          <NavLink class="nav-link navli text-uppercase" to="/read">Read</NavLink>
         </li>
         <li class="nav-item">
-          <a class="nav-link navli text-uppercase" href="#update">Update</a>
+          <NavLink class="nav-link navli text-uppercase" to="/update">Update</NavLink>
         </li>
       </ul>
     </div>

@@ -9,6 +9,7 @@ const Read = () => {
         .then((res)=>{
             const result = res.data
             setData(result)
+            console.log(result)
         })
         .catch((error)=>{
             console.log(error)
