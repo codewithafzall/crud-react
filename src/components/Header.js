@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { a } from 'react-router-dom'
 
 
 const Header = () => {
@@ -7,20 +7,20 @@ const Header = () => {
     <div>
         <nav class="navbar navbar-expand-lg navbar-light bg-light py-4">
   <div class="container-fluid">
-    <NavLink class="navbar-brand logo" to="/">REACT CRUD OPERATION</NavLink>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+    <a class="navbar-brand logo" href="/">REACT CRUD OPERATION</a>
+    <buthrefn class="navbar-hrefggler" type="buthrefn" data-bs-hrefggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="hrefggle navigation">
+      <span class="navbar-hrefggler-icon"></span>
+    </buthrefn>
     <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto me-5">
+      <ul class="navbar-nav ms-auhref me-5">
         <li class="nav-item text-uppercase ">
-          <NavLink class="nav-link  navli" to="/">Create</NavLink>
+          <a class="nav-link  navli" href="/">Create</a>
         </li>
         <li class="nav-item">
-          <NavLink class="nav-link navli text-uppercase" to="/read">Read</NavLink>
+          <a class="nav-link navli text-uppercase" href="#read">Read</a>
         </li>
         <li class="nav-item">
-          <NavLink class="nav-link navli text-uppercase" to="/update">Update</NavLink>
+          <a class="nav-link navli text-uppercase" href="#update">Update</a>
         </li>
       </ul>
     </div>

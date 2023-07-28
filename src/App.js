@@ -10,14 +10,16 @@ function App() {
   return (
     <div>
       
-      <Router>
-      <Header/>
-        <Switch>
-          <Route exact path="/" component={Create} />
-          <Route path='/read' component={Read} />
-          <Route path="/update" component={Update} />
-        </Switch>
-      </Router>
+     <Header/>
+     <section id='create'>
+      <Create/>
+     </section>
+     <section id='read'>
+      <Read/>
+     </section>
+     <section id='update'>
+      <Update/>
+     </section>
 
 
     
